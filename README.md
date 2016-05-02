@@ -13,6 +13,7 @@ The repository contains the following:
 2. "run_analysis.R"
     + The R script which collects and cleans the wearable computing data, creating a tidy data set called "all_data_tidy".
     + A zip file with the data is downloaded and extracted into your working directory, and the code uses the working directory to run the R script.
+	+ The warnings generated can be ignored.
 3. "CodeBook.md"
     + The code book which describes the variables, the data, and any transformations performed in the data clensing process.
 4. "all_data_tidy_subject_avg.txt"
