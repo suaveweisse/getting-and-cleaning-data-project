@@ -5,42 +5,27 @@ Introduction
 This repository contains my submission for the Getting and Cleaning Data Course Project. The purpose of this project is to demonstrate ability to collect, work with, and clean a data set. Using example data from a study on wearable computing, I have created an R script to download the raw data and transform it into a tidy data set that can be used for later analysis.
 
 About the repository
-------------
+------------------
 The repository contains the following:
 
 1. "README.md"
     + The README file for this repo.
 2. "run_analysis.R"
     + The R script which collects and cleans the wearable computing data, creating a tidy data set called "all_data_tidy".
+    + A zip file with the data is downloaded and extracted into your working directory, and the code uses the working directory to run the R script.
 3. "CodeBook.md"
-    +The code book which describes the variables, the data, and any transformations performed in the data clensing process.
+    + The code book which describes the variables, the data, and any transformations performed in the data clensing process.
 4. "all_data_tidy_subject_avg.txt"
-    +Text output of the tidy data summarized with the average of each variable for each activity and each subject.
-
-About the script and the tidy dataset
--------------------------------------
-I created a script called run_analysis.R which will merge the test and training sets together.
-Prerequisites for this script:
-
-1. the UCI HAR Dataset must be extracted and..
-2. the UCI HAR Dataset must be availble in a directory called "UCI HAR Dataset"
-
-After merging testing and training, labels are added and only columns that have to do with mean and standard deviation are kept.
-
-Lastly, the script will create a tidy data set containing the means of all the columns per test subject and per activity.
-This tidy dataset will be written to a tab-delimited file called tidy.txt, which can also be found in this repository.
-
-About the Code Book
--------------------
-The CodeBook.md file explains the transformations performed and the resulting data and variables.
+    + Text output of the tidy data summarized with the average of each variable for each activity and each subject.
 
 About the raw data
 ------------------
-One of the most exciting areas in all of data science right now is wearable computing - see for example [this article](http://www.insideactivitytracking.com/data-science-activity-tracking-and-the-battle-for-the-worlds-top-sports-brand/). Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data for this project represents data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones. The original readme file for the entire raw data set is listed below.
+One of the most exciting areas in all of data science right now is wearable computing - see for example [this article](http://www.insideactivitytracking.com/data-science-activity-tracking-and-the-battle-for-the-worlds-top-sports-brand/). Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users. The data for this project represents data collected from the accelerometers from the Samsung Galaxy S smartphone. A full description is available at the site where the data was obtained: 
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones. 
 
-==================================================================
-Human Activity Recognition Using Smartphones Dataset
-Version 1.0
+###### The original readme file for the entire raw data set is listed below.
+
+Human Activity Recognition Using Smartphones Dataset - Version 1.0
 ==================================================================
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
@@ -48,7 +33,6 @@ DITEN - Università degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
-==================================================================
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
