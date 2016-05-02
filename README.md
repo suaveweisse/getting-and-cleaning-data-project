@@ -1,6 +1,5 @@
 Getting and Cleaning Data: Course Project
 =========================================
-
 Introduction
 ------------
 This repository contains my submission for the Getting and Cleaning Data Course Project. The purpose of this project is to demonstrate ability to collect, work with, and clean a data set. Using example data from a study on wearable computing, I have created an R script to download the raw data and transform it into a tidy data set that can be used for later analysis.
@@ -9,17 +8,14 @@ About the repository
 ------------
 The repository contains the following:
 
-1. "README.md" - The README file for this repo.
-2. "run_analysis.R" - The R script which collects and cleans the wearable computing data, creating a tidy data set called "all_data_tidy".
-3. "CodeBook.md" - The code book which describes the variables, the data, and any transformations performed in the data clensing process.
-4. "all_data_tidy_subject_avg.txt" - Text output of the tidy data summarized with the average of each variable for each activity and each subject.
-
-
-
-
-
-
-
+1. "README.md"
+    + The README file for this repo.
+2. "run_analysis.R"
+    + The R script which collects and cleans the wearable computing data, creating a tidy data set called "all_data_tidy".
+3. "CodeBook.md"
+    +The code book which describes the variables, the data, and any transformations performed in the data clensing process.
+4. "all_data_tidy_subject_avg.txt"
+    +Text output of the tidy data summarized with the average of each variable for each activity and each subject.
 
 About the script and the tidy dataset
 -------------------------------------
