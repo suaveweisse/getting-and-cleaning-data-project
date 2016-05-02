@@ -71,4 +71,4 @@ colnames(all_data_tidy_subject_avg)[1] <- "activityName"
 colnames(all_data_tidy_subject_avg)[2] <- "subjectID"
 
 ## write the all_data_tidy_subject_avg.txt file to your working directory
-write.table(all_data_tidy_subject_avg, "all_data_tidy_subject_avg.txt", sep="\t")
+write.table(all_data_tidy_subject_avg, "all_data_tidy_subject_avg.txt", sep="\t", row.name+ F)
